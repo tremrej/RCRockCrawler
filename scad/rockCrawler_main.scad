@@ -264,7 +264,7 @@ assembly("G34")
 //! 1. Install a 5_5_ball_Closed on Axel_Case_p4 using a M2 self tapping screw 8 mm.
 //
 module Axle_part1_assembly() pose([77,0,60], exploded=false)
-assembly("Axle_part1", big=false) {
+assembly("Axle_part1", big=false, ngb=true) {
 
     Axle_Case_p4_stl();
     explode([0,-15,0], offset=[5,0,0]) {
@@ -279,7 +279,7 @@ assembly("Axle_part1", big=false) {
 //! 1. Install a 5_5_ball_Closed on left side of a Servo_Holder using a M2 self tapping screw 8 mm.
 //
 module Axle_part1_1_L_assembly() pose([77,0,60], exploded=false)
-assembly("Axle_part1_1_L", big=false) {
+assembly("Axle_part1_1_L", big=false, ngb=true) {
 
     Servo_Holder_stl();
     explode([0,-15,0], offset=[3,2.5,4]) {
@@ -294,7 +294,7 @@ assembly("Axle_part1_1_L", big=false) {
 //! 1. Install a 5_5_ball_Closed on right side of a Servo_Holder using a M2 self tapping screw 8 mm.
 //
 module Axle_part1_1_R_assembly() pose([77,0,60], exploded=false)
-assembly("Axle_part1_1_R", big=false) {
+assembly("Axle_part1_1_R", big=false, ngb=true) {
 
     Servo_Holder_stl();
     explode([0,10,0], offset=[3,2.5,4]) {
@@ -418,7 +418,7 @@ assembly("Axle_part4", big=false) {
 //! 4. Install a Drive_Cup in the Hub.
 //
 module Hub_L_assembly() pose([55,0,38],[11,-10,-3])
-assembly("Hub_L", big=false) {
+assembly("Hub_L", big=false, ngb=true) {
 
     Hub_stl();
     explode([0,-20,0], offset=[0,0,0]) {
@@ -448,7 +448,7 @@ assembly("Hub_L", big=false) {
 //! 4. Install a Drive_Cup in the hub.
 //
 module Hub_R_assembly() pose([55,0,38],[11,-10,-3])
-assembly("Hub_R", big=false) {
+assembly("Hub_R", big=false, ngb=true) {
 
     Hub_stl();
     explode([0,-20,0], offset=[0,0,0]) {
@@ -536,7 +536,7 @@ assembly("Axle_part5", big=false) {
 //! 1. Install the servo SG90 with 2 M2 self tapping screw 6 mm.
 //
 module Axle_part6_assembly() pose([60,0,243],[-4,-18,27])
-assembly("Axle_part6", big=false) {
+assembly("Axle_part6", big=false, ngb=true) {
 
     Axle_part5_assembly();
 
@@ -557,7 +557,7 @@ assembly("Axle_part6", big=false) {
 //! 1. Install the servo horn using the screw that came with the servo.
 //
 module Axle_part7_assembly() pose([60,0,243],[-4,-18,27])
-assembly("Axle_part7", big=false) {
+assembly("Axle_part7", big=false, ngb=true) {
 
     Axle_part6_assembly();
 
