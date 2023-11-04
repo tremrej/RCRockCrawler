@@ -2,7 +2,7 @@
     {
         "name": "Servo_control_link_assembly",
         "big": false,
-        "ngb": false,
+        "ngb": true,
         "zoomed": 0,
         "count": 2,
         "assemblies": {},
@@ -142,7 +142,7 @@
     {
         "name": "G34_assembly",
         "big": null,
-        "ngb": false,
+        "ngb": true,
         "zoomed": 0,
         "count": 2,
         "assemblies": {},
@@ -193,7 +193,7 @@
     {
         "name": "Axle_part2_assembly",
         "big": false,
-        "ngb": false,
+        "ngb": true,
         "zoomed": 0,
         "count": 2,
         "assemblies": {
@@ -215,7 +215,7 @@
     {
         "name": "Axle_part3_assembly",
         "big": false,
-        "ngb": false,
+        "ngb": true,
         "zoomed": 0,
         "count": 2,
         "assemblies": {
@@ -249,7 +249,7 @@
     {
         "name": "Axle_part4_assembly",
         "big": false,
-        "ngb": false,
+        "ngb": true,
         "zoomed": 0,
         "count": 2,
         "assemblies": {
@@ -273,7 +273,7 @@
     {
         "name": "Axle_part5_assembly",
         "big": false,
-        "ngb": false,
+        "ngb": true,
         "zoomed": 0,
         "count": 2,
         "assemblies": {
@@ -344,7 +344,7 @@
         "routed": {}
     },
     {
-        "name": "Axle_part8_assembly",
+        "name": "Axle_final_assembly",
         "big": false,
         "ngb": false,
         "zoomed": 0,
@@ -369,15 +369,10 @@
         "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "Axle_part8_assembly": 2
+            "Axle_final_assembly": 2
         },
         "vitamins": {},
-        "printed": {
-            "Ball_Link_41mm.stl": {
-                "count": 1,
-                "colour": "dimgrey"
-            }
-        },
+        "printed": {},
         "routed": {}
     }
 ]

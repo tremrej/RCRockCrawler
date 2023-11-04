@@ -242,7 +242,7 @@ module servoSG90()
 //! 2. Add the ball bearing MR128 at both ends.
 //
 module G34_assembly()
-assembly("G34")
+assembly("G34", ngb=true)
 {
     G34_P14_p1_stl();
     explode([15,0,0]) {
@@ -309,7 +309,7 @@ assembly("Axle_part1_1_R", big=false, ngb=true) {
 //! 1. Install both Axle_part1_assembly on the Axle_Case_p1 with 4 M2 self tapping screw 12 mm.
 //
 module Axle_part2_assembly() //pose([77,0,60], exploded=false)
-assembly("Axle_part2", big=false) {
+assembly("Axle_part2", big=false, ngb=true) {
 
     Axle_Case_p1_stl();
     explode([15,0,0], offset=[5.6,-18,0]) {
@@ -340,7 +340,7 @@ assembly("Axle_part2", big=false) {
 //! 5. Insert both Drive_Shaft in axle. Note: there is no ball bearing on the shaft.
 //
 module Axle_part3_assembly() 
-assembly("Axle_part3", big=false) {
+assembly("Axle_part3", big=false, ngb=true) {
 
     Axle_part2_assembly();
     explode([20,0,0]) {
@@ -381,7 +381,7 @@ assembly("Axle_part3", big=false) {
 //! 2. Install the servo holders (Axle_part1_1_L_assembly & Axle_part1_1_R_assembly) on Axle_Case_p2 with 2 M2 self tapping screw 10 mm.
 //
 module Axle_part4_assembly() pose([70,0,55],[7,0,5])
-assembly("Axle_part4", big=false) {
+assembly("Axle_part4", big=false, ngb=true) {
 
     Axle_part3_assembly();
     explode([0,-20,0], offset=[16,-10,8]) {
@@ -474,7 +474,7 @@ assembly("Hub_R", big=false, ngb=true) {
 //! 3. Install the Hub_R_assembly along with two Axle_Case_p3 with 4 M2 self tapping screw 5 mm
 //
 module Axle_part5_assembly() pose([68,0,73],[38,8,22])
-assembly("Axle_part5", big=false) {
+assembly("Axle_part5", big=false, ngb=true) {
 
     Axle_part4_assembly();
 
@@ -574,7 +574,7 @@ assembly("Axle_part7", big=false, ngb=true) {
 //! 1. Screw both Link_Closed_35mm on a 10 mm M2 threaded rod. Leave a gap of about 1 or 2 mm in the middle.
 //
 module Servo_control_link_assembly() pose([68,0,73],[38,8,22])
-assembly("Servo_control_link", big=false) {
+assembly("Servo_control_link", big=false, ngb=true) {
 
     // Threaded rod M2 0.4
     translate([0,0,0]) rotate([90,0,0]) studding(2, 10);
@@ -591,8 +591,8 @@ assembly("Servo_control_link", big=false) {
 //! 1. Install a Servo_control_link_assembly from the servo horn to left hub.
 //! 2. Install a Ball_Link_62mm between the two hubs.
 //
-module Axle_part8_assembly() pose([60,0,243],[-4,-18,27])
-assembly("Axle_part8", big=false) {
+module Axle_final_assembly() pose([60,0,243],[-4,-18,27])
+assembly("Axle_final", big=false) {
 
     Axle_part7_assembly();
 
@@ -612,11 +612,11 @@ assembly("Axle_part8", big=false) {
 module main_assembly() 
 assembly("main", big=true) {
 
-    Axle_part8_assembly();
+    Axle_final_assembly();
 
-    translate([10.5,-26.5,0]) rotate([90,0,0]) rotate([0,0,90]) Ball_Link_41mm_stl();
+    //translate([10.5,-26.5,0]) rotate([90,0,0]) rotate([0,0,90]) Ball_Link_41mm_stl();
     
-    translate([110,0,0]) rotate([0,0,180]) Axle_part8_assembly();
+    translate([110,0,0]) rotate([0,0,180]) Axle_final_assembly();
     
 }
 
@@ -625,7 +625,7 @@ if (showttt)
     //Axle_Case_p1_stl();
     //Axle_Case_p3_stl();
     //5_5_ball_Closed_stl();
-    //Axle_part8_assembly();
+    //Axle_final_assembly();
     //bb_MR63();
     screw(M2_screw, 10);
     //Servo_Holder_stl();

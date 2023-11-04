@@ -1,4 +1,4 @@
-stls/Ball_Link_41mm.stl: \
+stls/Ball_Link_62mm.stl: \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/fillet.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/maths.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/nut.scad \
@@ -9,6 +9,7 @@ stls/Ball_Link_41mm.stl: \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/washers.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/global.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/quadrant.scad \
+	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_62.stl \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/core.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/core.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/washer.scad \
@@ -27,6 +28,5 @@ stls/Ball_Link_41mm.stl: \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/inserts.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/rounded_rectangle.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/teardrops.scad \
-	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_41.stl \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/screw.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/clip.scad

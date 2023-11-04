@@ -1,4 +1,4 @@
-Axle_part8_assemblies:
+Axle_final_assemblies:
 Printed:
   2 Ball_Link_62mm.stl
 

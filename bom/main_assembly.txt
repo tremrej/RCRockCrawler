@@ -1,6 +1,4 @@
 main_assembly:
-Printed:
-  1 Ball_Link_41mm.stl
 
 Assemblies:
-  2 Axle_part8_assemblies
+  2 Axle_final_assemblies
