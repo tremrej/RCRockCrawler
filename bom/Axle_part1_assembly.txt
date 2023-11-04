@@ -1,0 +1,7 @@
+Axle_part1_assemblies:
+Vitamins:
+  4 Screw M2 pan self tap x 10mm
+
+Printed:
+  4 5_5_ball_Open.stl
+  4 Axle_Case_p4.stl

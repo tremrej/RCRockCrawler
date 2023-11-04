@@ -1,0 +1,7 @@
+Axle_part8_assemblies:
+Printed:
+  2 Ball_Link_62mm.stl
+
+Assemblies:
+  2 Axle_part7_assemblies
+  2 Servo_control_link_assemblies

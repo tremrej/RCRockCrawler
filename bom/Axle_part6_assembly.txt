@@ -1,0 +1,7 @@
+Axle_part6_assemblies:
+Vitamins:
+  4 Screw M2 pan self tap x  6mm
+  2 servoSG90():RC servo SG90
+
+Assemblies:
+  2 Axle_part5_assemblies

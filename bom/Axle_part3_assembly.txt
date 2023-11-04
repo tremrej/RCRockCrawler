@@ -1,0 +1,13 @@
+Axle_part3_assemblies:
+Vitamins:
+  2 Ball bearing MR63ZZ 5mm x 8mm x 2.5mm
+  8 Screw M2 pan self tap x  6mm
+
+Printed:
+  2 Axle_Case_p2.stl
+  4 Drive_Shaft.stl
+  2 P14_G34.stl
+
+Assemblies:
+  2 Axle_part2_assemblies
+  2 G34_assemblies

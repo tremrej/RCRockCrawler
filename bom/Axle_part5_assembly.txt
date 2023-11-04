@@ -1,0 +1,13 @@
+Axle_part5_assemblies:
+Vitamins:
+ 16 Screw M2 pan self tap x  5mm
+  2 Screw M2 pan self tap x  6mm
+
+Printed:
+  8 Axle_Case_p3.stl
+  2 Center_Drive_Cup.stl
+
+Assemblies:
+  2 Axle_part4_assemblies
+  2 Hub_L_assemblies
+  2 Hub_R_assemblies

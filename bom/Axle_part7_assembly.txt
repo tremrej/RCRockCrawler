@@ -1,0 +1,9 @@
+Axle_part7_assemblies:
+Vitamins:
+  2 Screw M2 pan self tap x  6mm
+
+Printed:
+  2 Servo_Horn.stl
+
+Assemblies:
+  2 Axle_part6_assemblies

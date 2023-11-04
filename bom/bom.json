@@ -1,0 +1,383 @@
+[
+    {
+        "name": "Servo_control_link_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {
+            "studding(2, 10): Threaded rod M2 x 10mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "Link_Closed_35mm.stl": {
+                "count": 4,
+                "colour": "red"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Hub_R_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {
+            "ball_bearing(BBMR128): Ball bearing MR128-2RS 8mm x 12mm x 3.5mm": {
+                "count": 2
+            },
+            "ball_bearing(BBMR63): Ball bearing MR63ZZ 5mm x 8mm x 2.5mm": {
+                "count": 2
+            },
+            "screw(M2_screw, 10): Screw M2 pan self tap x 10mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "Hub.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "Drive_Cup.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "5_5_ball_Open.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Hub_L_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {
+            "ball_bearing(BBMR128): Ball bearing MR128-2RS 8mm x 12mm x 3.5mm": {
+                "count": 2
+            },
+            "ball_bearing(BBMR63): Ball bearing MR63ZZ 5mm x 8mm x 2.5mm": {
+                "count": 2
+            },
+            "screw(M2_screw, 12): Screw M2 pan self tap x 12mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "Hub.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "Drive_Cup.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "5_5_ball_Open.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "5_5_ball_Closed.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part1_1_R_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {
+            "screw(M2_screw, 8): Screw M2 pan self tap x  8mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "Servo_Holder.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "5_5_ball_Open.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part1_1_L_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {
+            "screw(M2_screw, 8): Screw M2 pan self tap x  8mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "Servo_Holder.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "5_5_ball_Open.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "G34_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {
+            "ball_bearing(BBMR128): Ball bearing MR128-2RS 8mm x 12mm x 3.5mm": {
+                "count": 4
+            },
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "G34_P14_p1.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "G34_P14_p2.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part1_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 4,
+        "assemblies": {},
+        "vitamins": {
+            "screw(M2_screw, 10): Screw M2 pan self tap x 10mm": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "Axle_Case_p4.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            },
+            "5_5_ball_Open.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part2_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {
+            "Axle_part1_assembly": 4
+        },
+        "vitamins": {
+            "screw(M2_screw, 12): Screw M2 pan self tap x 12mm": {
+                "count": 8
+            }
+        },
+        "printed": {
+            "Axle_Case_p1.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part3_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {
+            "Axle_part2_assembly": 2,
+            "G34_assembly": 2
+        },
+        "vitamins": {
+            "ball_bearing(BBMR63): Ball bearing MR63ZZ 5mm x 8mm x 2.5mm": {
+                "count": 2
+            },
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 8
+            }
+        },
+        "printed": {
+            "P14_G34.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "Axle_Case_p2.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "Drive_Shaft.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part4_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {
+            "Axle_part3_assembly": 2,
+            "Axle_part1_1_L_assembly": 2,
+            "Axle_part1_1_R_assembly": 2
+        },
+        "vitamins": {
+            "screw(M2_screw, 10): Screw M2 pan self tap x 10mm": {
+                "count": 8
+            }
+        },
+        "printed": {
+            "5_5_ball_Open.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part5_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {
+            "Axle_part4_assembly": 2,
+            "Hub_L_assembly": 2,
+            "Hub_R_assembly": 2
+        },
+        "vitamins": {
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 2
+            },
+            "screw(M2_screw, 5): Screw M2 pan self tap x  5mm": {
+                "count": 16
+            }
+        },
+        "printed": {
+            "Axle_Case_p3.stl": {
+                "count": 8,
+                "colour": "dimgrey"
+            },
+            "Center_Drive_Cup.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part6_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {
+            "Axle_part5_assembly": 2
+        },
+        "vitamins": {
+            "servoSG90():RC servo SG90": {
+                "count": 2
+            },
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 4
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "Axle_part7_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {
+            "Axle_part6_assembly": 2
+        },
+        "vitamins": {
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "Servo_Horn.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "Axle_part8_assembly",
+        "big": false,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {
+            "Axle_part7_assembly": 2,
+            "Servo_control_link_assembly": 2
+        },
+        "vitamins": {},
+        "printed": {
+            "Ball_Link_62mm.stl": {
+                "count": 2,
+                "colour": "red"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "main_assembly",
+        "big": true,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "Axle_part8_assembly": 2
+        },
+        "vitamins": {},
+        "printed": {
+            "Ball_Link_41mm.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    }
+]

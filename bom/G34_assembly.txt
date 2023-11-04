@@ -1,0 +1,8 @@
+G34_assemblies:
+Vitamins:
+  4 Ball bearing MR128-2RS 8mm x 12mm x 3.5mm
+  2 Screw M2 pan self tap x  6mm
+
+Printed:
+  2 G34_P14_p1.stl
+  2 G34_P14_p2.stl

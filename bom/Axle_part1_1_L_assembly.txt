@@ -1,0 +1,7 @@
+Axle_part1_1_L_assemblies:
+Vitamins:
+  2 Screw M2 pan self tap x  8mm
+
+Printed:
+  2 5_5_ball_Open.stl
+  2 Servo_Holder.stl

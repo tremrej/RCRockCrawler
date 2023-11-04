@@ -1,0 +1,11 @@
+Axle_part4_assemblies:
+Vitamins:
+  8 Screw M2 pan self tap x 10mm
+
+Printed:
+  4 5_5_ball_Open.stl
+
+Assemblies:
+  2 Axle_part1_1_L_assemblies
+  2 Axle_part1_1_R_assemblies
+  2 Axle_part3_assemblies

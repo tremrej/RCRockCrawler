@@ -1,0 +1,10 @@
+Hub_R_assemblies:
+Vitamins:
+  2 Ball bearing MR128-2RS 8mm x 12mm x 3.5mm
+  2 Ball bearing MR63ZZ 5mm x 8mm x 2.5mm
+  2 Screw M2 pan self tap x 10mm
+
+Printed:
+  2 5_5_ball_Open.stl
+  2 Drive_Cup.stl
+  2 Hub.stl

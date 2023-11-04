@@ -1,0 +1,9 @@
+Axle_part2_assemblies:
+Vitamins:
+  8 Screw M2 pan self tap x 12mm
+
+Printed:
+  2 Axle_Case_p1.stl
+
+Assemblies:
+  4 Axle_part1_assemblies

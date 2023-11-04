@@ -1,0 +1,32 @@
+stls/Ball_Link_41mm.stl: \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/fillet.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/maths.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/nut.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/nuts.scad \
+	tmp/stl.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/tube.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/screws.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/washers.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/global.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/quadrant.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/core.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/core.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/washer.scad \
+	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/RockCrawler/scad/rockCrawler_main.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/polyholes.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/global_defs.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/thread.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/rod.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/rounded_cylinder.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/insert.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/sweep.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/bom.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/ball_bearing.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/ball_bearings.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/sphere.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/inserts.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/rounded_rectangle.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/teardrops.scad \
+	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_41.stl \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/screw.scad \
+	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/clip.scad
