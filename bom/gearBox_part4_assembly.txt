@@ -1,0 +1,9 @@
+gearBox_part4_assembly:
+Vitamins:
+  1 Ball bearing MR63ZZ 5mm x 8mm x 2.5mm
+
+Printed:
+  1 gearboxBack_v2.stl
+
+Assemblies:
+  1 gearBox_part3_assembly

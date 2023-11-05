@@ -1,0 +1,9 @@
+gearBox_part5_assembly:
+Vitamins:
+  2 Screw M2 pan self tap x  6mm
+
+Printed:
+  2 Center_Drive_Cup.stl
+
+Assemblies:
+  1 gearBox_part4_assembly

@@ -1,0 +1,11 @@
+gearBox_part3_assembly:
+Vitamins:
+  1 motor130():motor 130, 6 volts
+  2 Screw M2 pan self tap x  6mm
+
+Printed:
+  1 Motor_Holder.stl
+  1 gearMotor.stl
+
+Assemblies:
+  1 gearBox_part2_assembly

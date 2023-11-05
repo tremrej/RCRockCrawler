@@ -1,0 +1,9 @@
+gearBox_final_assembly:
+Vitamins:
+ 12 Screw M2 pan self tap x 10mm
+
+Printed:
+ 12 5_5_ball_Open.stl
+
+Assemblies:
+  1 gearBox_part7_assembly

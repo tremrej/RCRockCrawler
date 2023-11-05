@@ -1,5 +1,65 @@
 [
     {
+        "name": "wheel_left_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {},
+        "printed": {
+            "tire_v3.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "wheel_26_5mm.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "wheel_right_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {},
+        "printed": {
+            "tire_v3.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "wheel_26_5mm.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "drive_shaft_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 2,
+        "assemblies": {},
+        "vitamins": {},
+        "printed": {
+            "Center_Drive_Shaft_P2.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            },
+            "Center_Drive_Shaft_P1.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
         "name": "Servo_control_link_assembly",
         "big": false,
         "ngb": true,
@@ -14,7 +74,7 @@
         "printed": {
             "Link_Closed_35mm.stl": {
                 "count": 4,
-                "colour": "red"
+                "colour": "dimgrey"
             }
         },
         "routed": {}
@@ -214,7 +274,7 @@
     },
     {
         "name": "Axle_part3_assembly",
-        "big": false,
+        "big": true,
         "ngb": true,
         "zoomed": 0,
         "count": 2,
@@ -248,7 +308,7 @@
     },
     {
         "name": "Axle_part4_assembly",
-        "big": false,
+        "big": true,
         "ngb": true,
         "zoomed": 0,
         "count": 2,
@@ -272,7 +332,7 @@
     },
     {
         "name": "Axle_part5_assembly",
-        "big": false,
+        "big": true,
         "ngb": true,
         "zoomed": 0,
         "count": 2,
@@ -363,16 +423,276 @@
         "routed": {}
     },
     {
+        "name": "gearBox_part1_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "ball_bearing(BBMR63): Ball bearing MR63ZZ 5mm x 8mm x 2.5mm": {
+                "count": 1
+            },
+            "screw(M2_screw, 5): Screw M2 pan self tap x  5mm": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "gearboxFront_v2.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            },
+            "frameFront_v2_1.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "gearBox_part2_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_part1_assembly": 1
+        },
+        "vitamins": {
+            "rod(2, 10): Smooth rod 2mm x 10mm": {
+                "count": 1
+            }
+        },
+        "printed": {
+            "firstStageGear.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            },
+            "secondStageGear.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "gearBox_part3_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_part2_assembly": 1
+        },
+        "vitamins": {
+            "motor130():motor 130, 6 volts": {
+                "count": 1
+            },
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "gearMotor.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            },
+            "Motor_Holder.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "gearBox_part4_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_part3_assembly": 1
+        },
+        "vitamins": {
+            "ball_bearing(BBMR63): Ball bearing MR63ZZ 5mm x 8mm x 2.5mm": {
+                "count": 1
+            }
+        },
+        "printed": {
+            "gearboxBack_v2.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "gearBox_part5_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_part4_assembly": 1
+        },
+        "vitamins": {
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 2
+            }
+        },
+        "printed": {
+            "Center_Drive_Cup.stl": {
+                "count": 2,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "gearBox_part6_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_part5_assembly": 1
+        },
+        "vitamins": {
+            "screw(M2_screw, 12): Screw M2 pan self tap x 12mm": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "frameBack_v2_1.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "gearBox_part7_assembly",
+        "big": false,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_part6_assembly": 1
+        },
+        "vitamins": {
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "plate_long_v2.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "gearBox_final_assembly",
+        "big": true,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_part7_assembly": 1
+        },
+        "vitamins": {
+            "screw(M2_screw, 10): Screw M2 pan self tap x 10mm": {
+                "count": 12
+            }
+        },
+        "printed": {
+            "5_5_ball_Open.stl": {
+                "count": 12,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "suspension_part1_assembly",
+        "big": true,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "gearBox_final_assembly": 1,
+            "Axle_final_assembly": 2,
+            "drive_shaft_assembly": 2
+        },
+        "vitamins": {},
+        "printed": {
+            "Ball_Link_41mm.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            },
+            "Ball_Link_29mm.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "suspension_part2_assembly",
+        "big": true,
+        "ngb": true,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "suspension_part1_assembly": 1
+        },
+        "vitamins": {},
+        "printed": {
+            "shock_43mm.stl": {
+                "count": 4,
+                "colour": "dimgrey"
+            }
+        },
+        "routed": {}
+    },
+    {
         "name": "main_assembly",
         "big": true,
         "ngb": false,
         "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "Axle_final_assembly": 2
+            "suspension_part2_assembly": 1,
+            "wheel_right_assembly": 2,
+            "wheel_left_assembly": 2
         },
-        "vitamins": {},
-        "printed": {},
+        "vitamins": {
+            "screw(M2_screw, 8): Screw M2 pan self tap x  8mm": {
+                "count": 4
+            },
+            "screw(M2_screw, 6): Screw M2 pan self tap x  6mm": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "Wheel.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            },
+            "Center_Drive_Shaft_P2_15_5mm.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            },
+            "shock_46mm.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            },
+            "body_v3.stl": {
+                "count": 1,
+                "colour": "dimgrey"
+            }
+        },
         "routed": {}
     }
 ]

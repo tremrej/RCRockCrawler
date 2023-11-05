@@ -6,15 +6,31 @@
 
 //
 //! This is a remix version of an RC Rock Crawler that I found on Thingiverse.
-//! The original model got deleted since then.
+//! The original model got deleted since then. So I included the original here.
+//! The remix was first publish in Thingiverse at [Remix Rc Rock Crawler, new gearbox](https://www.thingiverse.com/thing:5236263).
 //! I modified the gearbox to make it slower, hence with more torque.
 //!
+//! General instruction:
+//!
+//! 1. Make sure the printer is well calibrated. Specifically the extruder. The extrusion factor, also know as the extrusion multiplier, will have a big impact on the way the pieces fits together. I personnaly use that guide before using a new filament: [Extrusion Multiplier](https://ellis3dp.com/Print-Tuning-Guide/articles/extrusion_multiplier.html)
+//! 2. Print every pieces in PLA.
+//! 3. Print the shock in PETG to get more flexibility.
+//! 4. If you decide to print the tires print them in TPU, the softest one you can find. The grip is not very good with printed tires. For better grip you can buy the tires. In that case print the wheel part Wheel.STL.
+//! 4. If the screws tend to break the plastic part you can enlarge the hole with a drill bit.
+//! 4. Use plenty of light grease in the gear box
+//! 5. Use a bit of light grease in the wheel hub.
+//! 6. If the center drive shaft keep falling off you can print this longer one: Center_Drive_Shaft_P2_15.55mm.stl.
+//! 7. I provided a longer shock shock_46mm_stl. The short version tend to keep the car a bit low.
+//! 
+//!
 //! Video:
+//! 
 //! 1. [In action](https://youtu.be/3EBpf9YP5C4)
 //! 2. [Showing the shock](https://youtu.be/YSYngEb9dG8)
 //! 3. [Gearbox assembly](https://youtu.be/KAkp_eB5qdQ)
 //!
 //! I found a link to the original video from the original designer:
+//!
 //! 1. [Make an RC Rock Crawler - Part 1](https://www.youtube.com/watch?v=WgZuojB2sF8&t=138s)
 //! 2. [Make an RC Rock Crawler - Part 2](https://www.youtube.com/watch?v=jjvKoB2oO8Q&t=319s)
 //!
@@ -28,7 +44,8 @@ $extrusion_width = 0.4;
 $layer_height = 0.2;
 $pp1_colour = "dimgrey";
 $pp2_colour = "red";
-$pp3_colour = "blue";
+$pp3_colour = "darkblue";
+$pp4_colour = "white";
 
 include <NopSCADlib/core.scad>
 use <NopSCADlib/utils/tube.scad>
@@ -177,20 +194,136 @@ module Servo_Horn_stl()
 module Link_Closed_35mm_stl()
 {
     stl("Link_Closed_35mm");
-    stl_colour(pp1_colour)
+    stl_colour(pp2_colour)
     translate([-3.5,0,-3.5]) rotate([0,0,-90]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/5.5_Link_Closed_35mm_C.STL");
 }
 module Ball_Link_62mm_stl()
 {
     stl("Ball_Link_62mm");
-    stl_colour(pp1_colour)
+    stl_colour(pp2_colour)
     translate([-3.5,0,-3.5]) rotate([0,0,-90]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_62.stl");
 }
 module Ball_Link_41mm_stl()
 {
     stl("Ball_Link_41mm");
-    stl_colour(pp1_colour)
+    stl_colour(pp2_colour)
     translate([-0,0,-3.5]) rotate([0,0,-90]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_41.stl");
+}
+module Ball_Link_29mm_stl()
+{
+    stl("Ball_Link_29mm");
+    stl_colour(pp2_colour)
+    translate([-0,0,-3.5]) rotate([0,0,-90]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_29.stl");
+}
+
+module gearboxBack_v2_stl()
+{
+    stl("gearboxBack_v2");
+    stl_colour(pp1_colour)
+    translate([-7.5,0,23.6]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/gearboxBack_v2.stl");
+}
+module gearboxFront_v2_stl()
+{
+    stl("gearboxFront_v2");
+    stl_colour(pp1_colour)
+    translate([-0,0,23.6]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/gearboxFront_v2.stl");
+}
+module frameFront_v2_1_stl()
+{
+    stl("frameFront_v2_1");
+    stl_colour(pp1_colour)
+    translate([0,0,23.6]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/frameFront_v2_1.stl");
+}
+module frameBack_v2_1_stl()
+{
+    stl("frameBack_v2_1");
+    stl_colour(pp1_colour)
+    translate([-0,0,23.6]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/frameBack_v2_1.stl");
+}
+module firstStageGear_stl()
+{
+    stl("firstStageGear");
+    stl_colour(pp2_colour)
+    translate([4,0,0]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/firstStageGear.stl");
+}
+module secondStageGear_stl()
+{
+    stl("secondStageGear");
+    stl_colour(pp2_colour)
+    translate([4,0,0]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/secondStageGear.stl");
+}
+module gearMotor_stl()
+{
+    stl("gearMotor");
+    stl_colour(pp2_colour)
+    rotate([10,0,0]) 
+    translate([4,0,0]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/gearMotor.stl");
+}
+module Motor_Holder_stl()
+{
+    stl("Motor_Holder");
+    stl_colour(pp2_colour)
+    translate([0,-13.5,-7.5]) rotate([0,0,90]) rotate([90,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Motor_Holder.STL");
+}
+module plate_long_v2_stl()
+{
+    stl("plate_long_v2");
+    stl_colour(pp1_colour)
+    translate([0,-27.5,0]) rotate([180,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/plate_long_v2.stl");
+}
+module Center_Drive_Shaft_P1_stl()
+{
+    stl("Center_Drive_Shaft_P1");
+    stl_colour(pp1_colour)
+    translate([0,-3.45,-3.45]) rotate([0,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Center_Drive_Shaft_-_P1.STL");
+}
+module Center_Drive_Shaft_P2_stl()
+{
+    stl("Center_Drive_Shaft_P2");
+    stl_colour(pp4_colour)
+    translate([-7,-3.45,3.45]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Center_Drive_Shaft_-_P2.STL");
+}
+module Center_Drive_Shaft_P2_15_5mm_stl()
+{
+    stl("Center_Drive_Shaft_P2_15_5mm");
+    stl_colour(pp4_colour)
+    translate([-7,-3.45,3.45]) rotate([0,90,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Center_Drive_Shaft_-_P2_15.5mm.stl");
+}
+module shock_46mm_stl()
+{
+    stl("shock_46mm");
+    stl_colour(pp4_colour)
+    translate([-23,-1.2,0]) rotate([-90,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/shock_46mm_1.0_5.45_off.stl");
+}
+module shock_43mm_stl()
+{
+    stl("shock_43mm");
+    stl_colour(pp2_colour)
+    translate([-43/2,-1.2,0]) rotate([-90,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/shock_43mm_0.8_5.45_off.stl");
+}
+module wheel_26_5mm_stl()
+{
+    stl("wheel_26_5mm");
+    stl_colour(pp2_colour)
+    translate([0,0,0]) rotate([-90,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/wheel_26_5mm.stl");
+}
+module Wheel_stl()
+{
+    stl("Wheel");
+    stl_colour(pp2_colour)
+    translate([0,0,0]) rotate([-90,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Wheel.STL");
+}
+module tire_v3_stl()
+{
+    stl("tire_v3");
+    stl_colour(pp1_colour)
+    translate([0,0,0]) rotate([-90,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/tire_v3.stl");
+}
+module body_v3_stl()
+{
+    stl("body_v3");
+    stl_colour(pp2_colour)
+    translate([0,0,0]) rotate([0,0,180]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/body_v3.stl");
 }
 
 
@@ -235,6 +368,32 @@ module servoSG90()
     vitamin("servoSG90():RC servo SG90");
     rotate([0,-90,0]) towerprosg90(position=[0,0,0], rotation=[0,0,90], screws = 0, axle_length = 0, cables=0);
 }
+
+module motor130()
+{
+    vitamin("motor130():motor 130, 6 volts");
+    rotate([90,0,0])
+    rotate([0,-90,0])
+    difference()
+    {
+        union()
+        {
+            stl_colour(pp3_colour) cylinder(h=20, r=20/2);
+            stl_colour(pp3_colour) translate([0,0,20]) cylinder(h=5.5, r=20/2);
+            stl_colour(pp1_colour) translate([0,0,-1.5]) cylinder(h=1.5, r=6/2);
+            stl_colour(pp1_colour) translate([0,0,-6.5]) cylinder(h=7, r=2/2);
+            difference()
+            {
+                translate([0,0,20+5.5]) cylinder(h=2.5, r=10/2);
+                translate ([-10,4,0]) cube([20,20,50]);
+            }
+        }
+
+        stl_colour(pp3_colour) translate([-15,15/2,-0.1]) cube ([30,30,50]);
+        stl_colour(pp3_colour) translate([-15,-30-15/2,-0.1]) cube ([30,30,50]);
+    }
+}
+
 
 
 //
@@ -340,7 +499,7 @@ assembly("Axle_part2", big=false, ngb=true) {
 //! 5. Insert both Drive_Shaft in axle. Note: there is no ball bearing on the shaft.
 //
 module Axle_part3_assembly() 
-assembly("Axle_part3", big=false, ngb=true) {
+assembly("Axle_part3", big=true, ngb=true) {
 
     Axle_part2_assembly();
     explode([20,0,0]) {
@@ -381,7 +540,7 @@ assembly("Axle_part3", big=false, ngb=true) {
 //! 2. Install the servo holders (Axle_part1_1_L_assembly & Axle_part1_1_R_assembly) on Axle_Case_p2 with 2 M2 self tapping screw 10 mm.
 //
 module Axle_part4_assembly() pose([70,0,55],[7,0,5])
-assembly("Axle_part4", big=false, ngb=true) {
+assembly("Axle_part4", big=true, ngb=true) {
 
     Axle_part3_assembly();
     explode([0,-20,0], offset=[16,-10,8]) {
@@ -474,7 +633,7 @@ assembly("Hub_R", big=false, ngb=true) {
 //! 3. Install the Hub_R_assembly along with two Axle_Case_p3 with 4 M2 self tapping screw 5 mm
 //
 module Axle_part5_assembly() pose([68,0,73],[38,8,22])
-assembly("Axle_part5", big=false, ngb=true) {
+assembly("Axle_part5", big=true, ngb=true) {
 
     Axle_part4_assembly();
 
@@ -542,7 +701,7 @@ assembly("Axle_part6", big=false, ngb=true) {
 
     explode([-30,0,0], offset=[15,-5,18]) {
         stl_colour(pp3_colour)
-           render() translate([15,-5.3,18.5]) servoSG90();
+           translate([15,-5.3,18.5]) servoSG90();
     }
 
     explode([-30-20,0,0], offset=[-3.5,+14.0,18.5]) {
@@ -597,28 +756,420 @@ assembly("Axle_final", big=false) {
     Axle_part7_assembly();
 
     explode([-30,0,0]) {
-        stl_colour(pp2_colour)
-           render() translate([-13,+12.5,7]) rotate([0,0,-3]) Servo_control_link_assembly();
+           translate([-13,+12.5,7]) rotate([0,0,-3]) Servo_control_link_assembly();
     }
     explode([0,0,-20], offset=[-8.5,31,-4.5]) {
         stl_colour(pp2_colour)
-           render() translate([-8.5,+31,-4.5]) Ball_Link_62mm_stl();
+           translate([-8.5,+31,-4.5]) Ball_Link_62mm_stl();
     }
 }
 
 //
-//! 1. To be continued
+//! 1. step 1
 //
-module main_assembly() 
+module gearBox_part1_assembly() pose([72,0,295], exploded=false) pose([72,0,336], exploded=true)
+assembly("gearBox_part1", big=false, ngb=true)
+{
+    gearboxFront_v2_stl();
+
+    explode([-15,0,0]) {
+        bb_MR63();
+    }
+    explode ([-30,0,0]) {
+        frameFront_v2_1_stl();
+    }
+
+    explode([-40-10,0,0], offset=[-1,-9.5,-10.5]) {
+        translate([-1,-9.5,-10.5]) rotate([0,-90,0]) screw_5mm();
+    }
+    explode([-40-10,0,0], offset=[-1,+9.5,-10.5]) {
+        translate([-1,+9.5,-10.5]) rotate([0,-90,0]) screw_5mm();
+    }
+
+    explode([-40-10,0,0], offset=[-1,-10.6,+11.0]) {
+        translate([-1,-10.6,+11.0]) rotate([0,-90,0]) screw_5mm();
+    }
+    explode([-40-10,0,0], offset=[-1,+10.6,+11.0]) {
+        translate([-1,+10.6,+11.0]) rotate([0,-90,0]) screw_5mm();
+    }
+}
+
+//
+//! 1. Make sure the whole in firstStageGear is 2 mm using a 2 mm drill.
+//! 2. Make sure the whole in frameFront_v2_1 is 2mm using a 2 mm drill. Do not go through the case.
+//! 3. Put some grease on both side ot firstStageGear.
+//! 3. Insert the 2 mm rod in the firstStageGear. Then insert in the frameFront_v2_1. Make sure it turns freely.
+//! 4. Put some grease on both side ot secondStageGear.
+//! 5. Insert secondStageGear on top of firstStageGear.
+//
+module gearBox_part2_assembly() pose([75,0,149], exploded=false) pose([75,0,149], exploded=true)
+assembly("gearBox_part2", big=false, ngb=true)
+{
+    gearBox_part1_assembly();
+
+    explode([10,0,0], offset=[0,0,12.7]) {
+        translate([0,0,12.7]) firstStageGear_stl();
+    }
+
+    explode([10+15,0,0], offset=[7,0,12.7]) {
+        translate([7,0,12.7]) rotate([0,90,0]) rod(2, 10);
+    }
+
+    explode([30,0,0], offset=[0,0,0]) {
+        translate([3.6,0,0]) secondStageGear_stl();
+    }
+}
+
+//
+//! 1. If your motor didn't come with a 8 thooht then insert the gearMotor onto the motor
+//! 2. Insert the motor. Make sure the gear are turning fine.
+//! 3. Install the Motor_Holder with 2 M2 self tapping screw 6 or 8 mm.
+//
+module gearBox_part3_assembly() pose([69,0,203], exploded=false) pose([69,0,203], exploded=true)
+assembly("gearBox_part3", big=false, ngb=true)
+{
+    gearBox_part2_assembly();
+
+    explode ([-30,0,0], offset=[-5.1,0,23.5]) {
+        translate([-5.1,0,23.5]) gearMotor_stl();
+    }
+    explode ([-30-10,0,0], offset=[-0.1,0,23.5]) {
+        translate([-0.1,0,23.5]) motor130();
+    }
+    explode ([-30-10-10,0,0], offset=[-27.1,0,23.5]) {
+        translate([-27.1,0,23.5]) Motor_Holder_stl();
+    }
+
+    explode ([-30-10-10-10,0,0], offset=[-27.1,+11,23.5+5]) {
+        translate([-27.1,+11,23.5+5]) rotate([0,-90,0]) screw_6mm();
+    }
+    explode ([-30-10-10-10,0,0], offset=[-27.1,-11,23.5+5]) {
+        translate([-27.1,-11,23.5+5]) rotate([0,-90,0]) screw_6mm();
+    }
+}
+
+module gearBox_part4_assembly() pose([76,0,148], exploded=false) pose([76,0,148], exploded=true)
+assembly("gearBox_part4", big=false, ngb=true)
+{
+    gearBox_part3_assembly();
+
+    explode([15,0,0], offset=[0,0,20]) {
+        translate([7.5,0,0]) gearboxBack_v2_stl();
+    }
+
+    explode([15+10,0,0], offset=[10,0,0]) {
+        translate([12.5,0,0]) bb_MR63();
+    }
+}
+
+//
+//! 1. Insert both Center_Drive_Cup with 2 M2 self tapping screw 6 mm.
+//
+module gearBox_part5_assembly() pose([76,0,161], exploded=false) pose([76,0,161], exploded=true)
+assembly("gearBox_part5", big=false, ngb=true)
+{
+    gearBox_part4_assembly();
+
+    explode([20,0,0], offset=[15,0,0]) {
+        translate([15,0,0]) rotate([0,0,0]) Center_Drive_Cup_stl();
+    }
+    explode([20+15,0,0], offset=[18.6,0,0]) {
+        translate([18.0,0,0]) rotate([0,90,0]) screw_6mm();
+    }
+
+    explode([-20,0,0], offset=[0,0,0]) {
+        translate([-1.0,0,0]) rotate([0,180,0]) Center_Drive_Cup_stl();
+    }
+    explode([-20-15,0,0], offset=[-4,0,0]) {
+        translate([-4,0,0]) rotate([0,-90,0]) screw_6mm();
+    }
+}
+
+//
+//! 1.Install the frameBack_v2_1 with 4 M2 self tapping screw 12 mm.
+//
+module gearBox_part6_assembly() pose([76,0,161], exploded=false) pose([76,0,161], exploded=true)
+assembly("gearBox_part6", big=false, ngb=true)
+{
+    gearBox_part5_assembly();
+    explode([20,0,0]) {
+        translate([0.0,0,0]) frameBack_v2_1_stl();
+    }
+
+    explode([20+10,0,0], offset=[16.1,-9.5,-10.5]) {
+        translate([16.1,-9.5,-10.5]) rotate([0,90,0]) screw_12mm();
+    }
+    explode([20+10,0,0], offset=[16.1,+9.5,-10.5]) {
+        translate([16.1,+9.5,-10.5]) rotate([0,90,0]) screw_12mm();
+    }
+    explode([20+10,0,0], offset=[16.1,-5.5,23.5]) {
+        translate([16.1,-5.5,23.5]) rotate([0,90,0]) screw_12mm();
+    }
+    explode([20+10,0,0], offset=[16.1,+5.5,23.5]) {
+        translate([16.1,+5.5,23.5]) rotate([0,90,0]) screw_12mm();
+    }
+}
+
+//
+//! 1.Install the frameBack_v2_1 with 4 M2 self tapping screw 12 mm.
+//
+module gearBox_part7_assembly() pose([76,0,161], exploded=false) pose([76,0,161], exploded=true)
+assembly("gearBox_part7", big=false, ngb=true)
+{
+    gearBox_part6_assembly();
+
+    explode([0,0,15], offset=[0,0,37]) {
+        translate([-20,0,36.5]) plate_long_v2_stl();
+    }
+
+    explode([0,0,15+10], offset=[-17.5,-12.5,36.5]) {
+        translate([-17.5,-12.5,36.5]) rotate([0,0,0]) screw_6mm();
+    }
+    explode([0,0,15+10], offset=[-17.5,+12.5,36.5]) {
+        translate([-17.5,+12.5,36.5]) rotate([0,0,0]) screw_6mm();
+    }
+    explode([0,0,15+10], offset=[32.5,-12.5,36.5]) {
+        translate([32.6,-12.5,36.5]) rotate([0,0,0]) screw_6mm();
+    }
+    explode([0,0,15+10], offset=[32.5,+12.5,36.5]) {
+        translate([32.6,+12.5,36.5]) rotate([0,0,0]) screw_6mm();
+    }
+}
+
+module gearBox_final_assembly() pose([86,0,309], exploded=false) pose([86,0,309], exploded=true)
+assembly("gearBox_final", big=true)
+{
+    translate([-7.5,0,0]) gearBox_part7_assembly();
+
+    explode([0,-15,0], offset=[-27,-15,31]) {
+        translate([-27.3,-15.0,31.0]) rotate([0,0,-90]) 5_5_ball_Open_stl();
+    }
+    explode([0,+15,0], offset=[-27,+15,31]) {
+        translate([-27.3,+15.0,31.0]) rotate([0,0,+90]) 5_5_ball_Open_stl();
+    }
+    explode([0,-15,0], offset=[-27,-15,31]) {
+        translate([+27.3,-15.0,31.0]) rotate([0,0,-90]) 5_5_ball_Open_stl();
+    }
+    explode([0,+15,0], offset=[-27,+15,31]) {
+        translate([+27.3,+15.0,31.0]) rotate([0,0,+90]) 5_5_ball_Open_stl();
+    }
+
+    explode([0,-15-15,0], offset=[-27,-15-5,31]) {
+        translate([-27.3,-15.0-5,31.0]) rotate([90,0,0]) screw_10mm();
+    }
+    explode([0,+15-15,0], offset=[-27,+15+5,31]) {
+        translate([-27.3,+15.0+5,31.0]) rotate([-90,0,0]) screw_10mm();
+    }
+    explode([0,-15-15,0], offset=[-27,-15-5,31]) {
+        translate([+27.3,-15.0-5,31.0]) rotate([90,0,0]) screw_10mm();
+    }
+    explode([0,+15-15,0], offset=[-27,+15+5,31]) {
+        translate([+27.3,+15.0+5,31.0]) rotate([-90,0,0]) screw_10mm();
+    }
+
+    explode([0,-15,0], offset=[-18,-10,-1.5]) {
+        translate([-17.7,-10.0,-1.5]) rotate([0,0,-90]) 5_5_ball_Open_stl();
+    }
+    explode([0,+15,0], offset=[-18,+10,-1.5]) {
+        translate([-17.7,+10.0,-1.5]) rotate([0,0,+90]) 5_5_ball_Open_stl();
+    }
+    explode([0,-15,0], offset=[-18,-10,-1.5]) {
+        translate([+17.7,-10.0,-1.5]) rotate([0,0,-90]) 5_5_ball_Open_stl();
+    }
+    explode([0,+15,0], offset=[-18,+10,-1.5]) {
+        translate([+17.7,+10.0,-1.5]) rotate([0,0,+90]) 5_5_ball_Open_stl();
+    }
+
+    explode([0,-15-15,0], offset=[-17.7,-15,-1.5]) {
+        translate([-17.7,-10.0-5,-1.5]) rotate([90,0,0]) screw_10mm();
+    }
+    explode([0,+15-15,0], offset=[-17.7,+15,-1.5]) {
+        translate([-17.7,+10.0+5,-1.5]) rotate([-90,0,0]) screw_10mm();
+    }
+    explode([0,-15-15,0], offset=[-17.7,-15,-1.5]) {
+        translate([+17.7,-10.0-5,-1.5]) rotate([90,0,0]) screw_10mm();
+    }
+    explode([0,+15-15,0], offset=[-17.7,+15,-1.5]) {
+        translate([+17.7,+10.0+5,-1.5]) rotate([-90,0,0]) screw_10mm();
+    }
+
+    explode([0,-15,0], offset=[-10,-15,-6.5]) {
+        translate([-10.2,-15.0,-6.5]) rotate([0,0,-90]) 5_5_ball_Open_stl();
+    }
+    explode([0,+15,0], offset=[-10,+15,-6.5]) {
+        translate([-10.2,+15.0,-6.5]) rotate([0,0,+90]) 5_5_ball_Open_stl();
+    }
+    explode([0,-15,0], offset=[-10,-15,-6.5]) {
+        translate([+10.2,-15.0,-6.5]) rotate([0,0,-90]) 5_5_ball_Open_stl();
+    }
+    explode([0,+15,0], offset=[-10,+15,-6.5]) {
+        translate([+10.2,+15.0,-6.5]) rotate([0,0,+90]) 5_5_ball_Open_stl();
+    }
+
+    explode([0,-15-15,0], offset=[-10,-20,-6.5]) {
+        translate([-10.2,-15.0-5,-6.5]) rotate([90,0,0]) screw_10mm();
+    }
+    explode([0,+15-15,0], offset=[-10,+20,-6.5]) {
+        translate([-10.2,+15.0+5,-6.5]) rotate([-90,0,0]) screw_10mm();
+    }
+    explode([0,-15-15,0], offset=[-10,-20,-6.5]) {
+        translate([+10.2,-15.0-5,-6.5]) rotate([90,0,0]) screw_10mm();
+    }
+    explode([0,+15-15,0], offset=[-10,+20,-6.5]) {
+        translate([+10.2,+15.0+5,-6.5]) rotate([-90,0,0]) screw_10mm();
+    }
+}
+
+//
+//! 1. It is a good idea to print the Center_Drive_Shaft_P2 in TPU. It makes the assembly a bit easier
+//! 2. Press fix both Center_Drive_Shaft_P1 into Center_Drive_Shaft_P2.
+//
+module drive_shaft_assembly() pose([86,0,309], exploded=false) pose([86,0,309], exploded=true)
+assembly("drive_shaft", big=false, ngb=true)
+{
+    Center_Drive_Shaft_P2_stl();
+    explode([15,0,0]) {
+        translate([3,0,0]) Center_Drive_Shaft_P1_stl();
+    }
+    explode([-15,0,0]) {
+        translate([-3,0,0]) rotate([0,180,0]) Center_Drive_Shaft_P1_stl();
+    }
+}
+
+//
+//! 1. Proceed with one end at a time.
+//! 2. Install the 2 Ball_Link_41mm
+//! 3. Install the drive_shaft_assembly
+//! 4. Install the 2 Ball_Link_29mm
+//! 5. Proceed with the other end.
+//
+module suspension_part1_assembly() 
+assembly("suspension_part1", big=true, ngb=true) {
+
+    translate([0,0,0]) gearBox_final_assembly();
+    translate([-27.0,0,-3])
+        translate([-35,0,-3]) Axle_final_assembly();
+        //translate([-35,0,-3]) Axle_part5_assembly();
+
+    translate([10.3,-21.5,-6.4]) rotate([90,0,-7]) rotate([0,0,90]) Ball_Link_41mm_stl();
+    translate([10.3,+21.5-5,-6.4]) rotate([90,0,+7]) rotate([0,0,90]) Ball_Link_41mm_stl();
+
+    translate([17.3,-16.5,-1.4]) rotate([90,-6,+10]) rotate([0,0,90]) Ball_Link_29mm_stl();
+    translate([17.3,+16.5-5,-1.4]) rotate([90,-6,-10]) rotate([0,0,90]) Ball_Link_29mm_stl();
+
+    translate([-10.3-41,-21.5-5,-6.4]) rotate([90,0,+7]) rotate([0,0,90]) Ball_Link_41mm_stl();
+    translate([-10.3-41,+21.5-0,-6.4]) rotate([90,0,-7]) rotate([0,0,90]) Ball_Link_41mm_stl();
+
+    translate([-17.3-29,-16.5+5,-1.4+3.5]) rotate([90,+6,-10]) rotate([0,0,90]) Ball_Link_29mm_stl();
+    translate([-17.3-28.5,+16.5-9,-1.4+3.5]) rotate([90,+6,+10]) rotate([0,0,90]) Ball_Link_29mm_stl();
+    
+    translate([27.0,0,-3.5])
+        translate([35,0,-3]) rotate([0,0,180]) Axle_final_assembly();
+        //translate([35,0,-3]) rotate([0,0,180]) Axle_part5_assembly();
+
+    translate([-27,0,-3]) rotate([0,-15,0]) drive_shaft_assembly();
+    translate([+27,0,-3]) rotate([0,+15,0]) drive_shaft_assembly();
+}
+
+//
+//! 1. Install the shock. Pay attention to the opening at the ball joint: they should be facing up. This will make the shock bending downward when compressed.
+//
+module suspension_part2_assembly() 
+assembly("suspension_part2", big=true, ngb=true) {
+
+    suspension_part1_assembly();
+    translate([-44.5,-20,18]) rotate([0,-38,0]) shock_43mm_stl();
+    translate([-45,+20,18]) rotate([0,-38,0]) shock_43mm_stl();
+    translate([+44.5,-20,18]) rotate([0,+38,0]) shock_43mm_stl();
+    translate([+44.5,+20,18]) rotate([0,+38,0]) shock_43mm_stl();
+}
+
+// 
+//! 1. Install the tire on the rim
+//
+module wheel_left_assembly() pose([65,0,217])
+assembly("wheel_left", big=false, ngb=true) {
+
+    translate([0,0.1,0]) tire_v3_stl();
+    explode([0,+25,0]) {
+        wheel_26_5mm_stl();
+    }
+}
+
+// 
+//! 1. Install the tire on the rim the thread oriented the other way compare to the wheel_left_assembly.
+//
+module wheel_right_assembly() pose([65,0,217])
+assembly("wheel_right", big=false, ngb=true) {
+
+    translate([0,13.8,0]) rotate([0,0,180]) tire_v3_stl();
+    explode([0,+25,0]) {
+        wheel_26_5mm_stl();
+    }
+}
+
+
+// 
+//! 1. Install the 4 wheel with M2 self tapping screw 8 mm.
+//! 2. Install the body with 4 M2 self tapping screw 5 mm.
+//
+module main_assembly() pose([67,0,294], exploded=true)
 assembly("main", big=true) {
 
-    Axle_final_assembly();
+    hidden()
+    {
+        Wheel_stl();
+        Center_Drive_Shaft_P2_15_5mm_stl();
+        shock_46mm_stl();
+    }
 
-    //translate([10.5,-26.5,0]) rotate([90,0,0]) rotate([0,0,90]) Ball_Link_41mm_stl();
-    
-    translate([110,0,0]) rotate([0,0,180]) Axle_final_assembly();
-    
+    suspension_part2_assembly();
+
+    explode ([0,+30,0], offset=[62.0,35.5,-6.5]) {
+        translate([62.0,35.5,-6.5]) wheel_right_assembly();
+    }
+    explode ([0,+30,0], offset=[-62.0,35.5,-6.5]) {
+        translate([-62.0,35.5,-6.5]) wheel_right_assembly();
+    }
+    explode ([0,-30,0], offset=[62.0,-35.5,-6.5]) {
+        translate([62.0,-35.5,-6.5]) rotate([0,0,180]) wheel_left_assembly();
+    }
+    explode ([0,-30,0], offset=[-62.0,-35.5,-6.5]) {
+        translate([-62.0,-35.5,-6.5]) rotate([0,0,180]) wheel_left_assembly();
+    }
+
+    explode ([0,+30+20,0], offset=[62.0,43.5,-6.5]) {
+        translate([62.0,43.5,-6.5]) rotate([-90,0,0]) screw_8mm();
+    }
+    explode ([0,+30+20,0], offset=[-62.0,43.5,-6.5]) {
+        translate([-62.0,43.5,-6.5]) rotate([-90,0,0]) screw_8mm();
+    }
+    explode ([0,-30-20,0], offset=[62.0,43.5,-6.5]) {
+        translate([62.0,-43.5,-6.5]) rotate([90,0,0]) screw_8mm();
+    }
+    explode ([0,-30-20,0], offset=[-62.0,43.5,-6.5]) {
+        translate([-62.0,-43.5,-6.5]) rotate([90,0,0]) screw_8mm();
+    }
+
+    explode([0,0,20]) {
+        translate([0,0,36.5]) rotate([0,0,0]) body_v3_stl();
+    }
+
+    explode([0,0,20+10], offset=[-19.5,-24.8,37.5]) {
+        translate([-19.5,-24.8,37.5]) rotate([0,0,0]) screw_6mm();
+    }
+    explode([0,0,20+10], offset=[-19.5,+24.8,37.5]) {
+        translate([-19.5,+24.8,37.5]) rotate([0,0,0]) screw_6mm();
+    }
+
+    explode([0,0,20+10], offset=[+15.2,-24.8,37.5]) {
+        translate([+15.2,-24.8,37.5]) rotate([0,0,0]) screw_6mm();
+    }
+    explode([0,0,20+10], offset=[+15.2,+24.8,37.5]) {
+        translate([+15.2,+24.8,37.5]) rotate([0,0,0]) screw_6mm();
+    }
 }
+
 
 if (showttt)
 {
@@ -644,14 +1195,28 @@ if (showttt)
 
 
 if($preview)
-    main_assembly();
+{
     //Hub_L_assembly();
     //Axle_part6_assembly();
     //G34_assembly();
     //Axle_part7_assembly();
     //Servo_Horn_stl();
-    //Axle_part7_assembly();
+    //Axle_part6_assembly();
+    //servoSG90();
     //Ball_Link_41mm_stl();
+    //gearboxBack_v2_stl();
+    //gearBox_part4_assembly();
+    //gearBox_final_assembly();
+    //drive_shaft_assembly();
+    //shock_46mm_stl();
+    //shock_43mm_stl();
+    //wheel_26_5mm_stl();
+    //tire_v3_stl();
+    //wheel_left_assembly();
+    //body_v3_stl();
+    //Axle_final_assembly();
+    main_assembly();
+}
 else
     //Axle_Case_p1_stl();
     Axle_part7_assembly();

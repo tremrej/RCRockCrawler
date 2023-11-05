@@ -1,0 +1,8 @@
+gearBox_part1_assembly:
+Vitamins:
+  1 Ball bearing MR63ZZ 5mm x 8mm x 2.5mm
+  4 Screw M2 pan self tap x  5mm
+
+Printed:
+  1 frameFront_v2_1.stl
+  1 gearboxFront_v2.stl

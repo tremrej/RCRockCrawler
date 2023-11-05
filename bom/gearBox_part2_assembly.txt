@@ -1,0 +1,10 @@
+gearBox_part2_assembly:
+Vitamins:
+  1 Smooth rod 2mm x 10mm
+
+Printed:
+  1 firstStageGear.stl
+  1 secondStageGear.stl
+
+Assemblies:
+  1 gearBox_part1_assembly

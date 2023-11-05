@@ -1,0 +1,6 @@
+suspension_part2_assembly:
+Printed:
+  4 shock_43mm.stl
+
+Assemblies:
+  1 suspension_part1_assembly

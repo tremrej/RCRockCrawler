@@ -1,4 +1,5 @@
-stls/Ball_Link_62mm.stl: \
+stls/body_v3.stl: \
+	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/body_v3.stl \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/fillet.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/maths.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/nut.scad \
@@ -9,7 +10,6 @@ stls/Ball_Link_62mm.stl: \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/washers.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/global.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/quadrant.scad \
-	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_62.stl \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/core.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/core.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/washer.scad \

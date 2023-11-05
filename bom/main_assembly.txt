@@ -1,4 +1,15 @@
 main_assembly:
+Vitamins:
+  4 Screw M2 pan self tap x  6mm
+  4 Screw M2 pan self tap x  8mm
+
+Printed:
+  1 Center_Drive_Shaft_P2_15_5mm.stl
+  1 Wheel.stl
+  1 body_v3.stl
+  1 shock_46mm.stl
 
 Assemblies:
-  2 Axle_final_assemblies
+  1 suspension_part2_assembly
+  2 wheel_left_assemblies
+  2 wheel_right_assemblies

@@ -1,0 +1,9 @@
+gearBox_part6_assembly:
+Vitamins:
+  4 Screw M2 pan self tap x 12mm
+
+Printed:
+  1 frameBack_v2_1.stl
+
+Assemblies:
+  1 gearBox_part5_assembly

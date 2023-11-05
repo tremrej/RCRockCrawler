@@ -1,50 +1,72 @@
 Vitamins:
-                                        S   
-                                        e   
-                                        r   
-                                        v   
-    A  A                                o   
-    x  x                                    
-    l  l                                c   
-    e  e                                o   
- A        A  A  A  A  A  A  A           n   
- x  p  p  x  x  x  x  x  x  x           t   
- l  a  a  l  l  l  l  l  l  l           r   
- e  r  r  e  e  e  e  e  e  e           o   
-    t  t                                l   
- f  1  1  p  p  p  p  p  p  p     H  H      
- i        a  a  a  a  a  a  a     u  u  l  M
- n  1  1  r  r  r  r  r  r  r  G  b  b  i  a
- a        t  t  t  t  t  t  t  3        n  i
- l  l  r  1  2  3  4  5  6  7  4  l  r  k  n
-  |  |  |  |  |  |  |  |  |  | 4| 2| 2|  |  |  8 Ball bearing MR128-2RS 8mm x 12mm x 3.5mm
-  |  |  |  |  | 2|  |  |  |  |  | 2| 2|  |  |  6 Ball bearing MR63ZZ 5mm x 8mm x 2.5mm
-  |  |  | 4|  |  | 8|  |  |  |  |  | 2|  |  | 14 Screw M2 pan self tap x 10mm
-  |  |  |  | 8|  |  |  |  |  |  | 2|  |  |  | 10 Screw M2 pan self tap x 12mm
-  |  |  |  |  |  |  |16|  |  |  |  |  |  |  | 16 Screw M2 pan self tap x  5mm
-  |  |  |  |  | 8|  | 2| 4| 2| 2|  |  |  |  | 18 Screw M2 pan self tap x  6mm
-  | 2| 2|  |  |  |  |  |  |  |  |  |  |  |  |  4 Screw M2 pan self tap x  8mm
-  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  2 servoSG90():RC servo SG90
-  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  2 Threaded rod M2 x 10mm
+                                        S                                          
+                                        e                                          
+                                        r                                S  S      
+                                        v                                u  u      
+    A  A                                o                                s  s      
+    x  x                                      G  G  G  G  G  G  G  G     p  p      
+    l  l                                c     e  e  e  e  e  e  e  e     e  e      
+    e  e                                o  D  a  a  a  a  a  a  a  a     n  n     W
+ A        A  A  A  A  A  A  A           n  r  r  r  r  r  r  r  r  r     s  s  W  h
+ x  p  p  x  x  x  x  x  x  x           t  i  b  b  b  b  b  b  b  b     i  i  h  e
+ l  a  a  l  l  l  l  l  l  l           r  v  o  o  o  o  o  o  o  o     o  o  e  e
+ e  r  r  e  e  e  e  e  e  e           o  e  x  x  x  x  x  x  x  x     n  n  e  l
+    t  t                                l                                      l   
+ f  1  1  p  p  p  p  p  p  p     H  H     s  f  p  p  p  p  p  p  p     p  p     r
+ i        a  a  a  a  a  a  a     u  u  l  h  i  a  a  a  a  a  a  a  M  a  a  l  i
+ n  1  1  r  r  r  r  r  r  r  G  b  b  i  a  n  r  r  r  r  r  r  r  a  r  r  e  g
+ a        t  t  t  t  t  t  t  3        n  f  a  t  t  t  t  t  t  t  i  t  t  f  h
+ l  l  r  1  2  3  4  5  6  7  4  l  r  k  t  l  1  2  3  4  5  6  7  n  1  2  t  t
+  |  |  |  |  |  |  |  |  |  | 4| 2| 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  8 Ball bearing MR128-2RS 8mm x 12mm x 3.5mm
+  |  |  |  |  | 2|  |  |  |  |  | 2| 2|  |  |  | 1|  |  | 1|  |  |  |  |  |  |  |  |  8 Ball bearing MR63ZZ 5mm x 8mm x 2.5mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 motor130():motor 130, 6 volts
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  1 Smooth rod 2mm x 10mm
+  |  |  | 4|  |  | 8|  |  |  |  |  | 2|  |  |12|  |  |  |  |  |  |  |  |  |  |  |  | 26 Screw M2 pan self tap x 10mm
+  |  |  |  | 8|  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  | 14 Screw M2 pan self tap x 12mm
+  |  |  |  |  |  |  |16|  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  | 20 Screw M2 pan self tap x  5mm
+  |  |  |  |  | 8|  | 2| 4| 2| 2|  |  |  |  |  |  |  | 2|  | 2|  | 4| 4|  |  |  |  | 30 Screw M2 pan self tap x  6mm
+  | 2| 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  8 Screw M2 pan self tap x  8mm
+  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 servoSG90():RC servo SG90
+  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Threaded rod M2 x 10mm
 
 Printed:
-  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  2 5_5_ball_Closed.stl
-  | 2| 2| 4|  |  | 4|  |  |  |  | 2| 2|  |  | 16 5_5_ball_Open.stl
-  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  2 Axle_Case_p1.stl
-  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  2 Axle_Case_p2.stl
-  |  |  |  |  |  |  | 8|  |  |  |  |  |  |  |  8 Axle_Case_p3.stl
-  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  4 Axle_Case_p4.stl
- 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Ball_Link_62mm.stl
-  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 Center_Drive_Cup.stl
-  |  |  |  |  |  |  |  |  |  |  | 2| 2|  |  |  4 Drive_Cup.stl
-  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  4 Drive_Shaft.stl
-  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  2 G34_P14_p1.stl
-  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  2 G34_P14_p2.stl
-  |  |  |  |  |  |  |  |  |  |  | 2| 2|  |  |  4 Hub.stl
-  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Link_Closed_35mm.stl
-  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  2 P14_G34.stl
-  | 2| 2|  |  |  |  |  |  |  |  |  |  |  |  |  4 Servo_Holder.stl
-  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  2 Servo_Horn.stl
+  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 5_5_ball_Closed.stl
+  | 2| 2| 4|  |  | 4|  |  |  |  | 2| 2|  |  |12|  |  |  |  |  |  |  |  |  |  |  |  | 28 5_5_ball_Open.stl
+  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Axle_Case_p1.stl
+  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Axle_Case_p2.stl
+  |  |  |  |  |  |  | 8|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  8 Axle_Case_p3.stl
+  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Axle_Case_p4.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 Ball_Link_29mm.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 Ball_Link_41mm.stl
+ 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Ball_Link_62mm.stl
+  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  4 Center_Drive_Cup.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Center_Drive_Shaft_P1.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Center_Drive_Shaft_P2.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 Center_Drive_Shaft_P2_15_5mm.stl
+  |  |  |  |  |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Drive_Cup.stl
+  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Drive_Shaft.stl
+  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 G34_P14_p1.stl
+  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 G34_P14_p2.stl
+  |  |  |  |  |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Hub.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Link_Closed_35mm.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 Motor_Holder.stl
+  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 P14_G34.stl
+  | 2| 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Servo_Holder.stl
+  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Servo_Horn.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 Wheel.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 body_v3.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  1 firstStageGear.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  1 frameBack_v2_1.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 frameFront_v2_1.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 gearMotor.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  1 gearboxBack_v2.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 gearboxFront_v2.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  1 plate_long_v2.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  1 secondStageGear.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  4 shock_43mm.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  1 shock_46mm.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2| 2|  4 tire_v3.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2| 2|  4 wheel_26_5mm.stl
 
 Assemblies:
   2 Axle_final_assemblies
@@ -61,4 +83,17 @@ Assemblies:
   2 Hub_L_assemblies
   2 Hub_R_assemblies
   2 Servo_control_link_assemblies
+  2 drive_shaft_assemblies
+  1 gearBox_final_assembly
+  1 gearBox_part1_assembly
+  1 gearBox_part2_assembly
+  1 gearBox_part3_assembly
+  1 gearBox_part4_assembly
+  1 gearBox_part5_assembly
+  1 gearBox_part6_assembly
+  1 gearBox_part7_assembly
   1 main_assembly
+  1 suspension_part1_assembly
+  1 suspension_part2_assembly
+  2 wheel_left_assemblies
+  2 wheel_right_assemblies
