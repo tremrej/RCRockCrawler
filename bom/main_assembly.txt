@@ -5,9 +5,9 @@ Vitamins:
 
 Printed:
   1 Center_Drive_Shaft_P2_15_5mm.stl
-  1 Wheel.stl
   1 body_v3.stl
   1 shock_46mm.stl
+  1 wheel_26_5mm.stl
 
 Assemblies:
   1 suspension_part2_assembly

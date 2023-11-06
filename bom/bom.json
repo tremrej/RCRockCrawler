@@ -12,7 +12,7 @@
                 "count": 2,
                 "colour": "dimgrey"
             },
-            "wheel_26_5mm.stl": {
+            "Wheel.stl": {
                 "count": 2,
                 "colour": "dimgrey"
             }
@@ -32,7 +32,7 @@
                 "count": 2,
                 "colour": "dimgrey"
             },
-            "wheel_26_5mm.stl": {
+            "Wheel.stl": {
                 "count": 2,
                 "colour": "dimgrey"
             }
@@ -676,7 +676,7 @@
             }
         },
         "printed": {
-            "Wheel.stl": {
+            "wheel_26_5mm.stl": {
                 "count": 1,
                 "colour": "dimgrey"
             },

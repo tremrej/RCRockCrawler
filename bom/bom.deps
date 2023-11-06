@@ -1,11 +1,11 @@
 openscad.echo: \
 	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/body_v3.stl \
+	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Wheel.STL \
 	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/shock_43mm_0.8_5.45_off.stl \
 	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Center_Drive_Shaft_-_P2.STL \
 	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/ballLink_29.stl \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/clip.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/screw.scad \
-	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Wheel.STL \
 	/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Servo_horn_-_5.5_4_ball.STL \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/teardrops.scad \
 	/home/rejeantremblay/.local/share/OpenSCAD/libraries/NopSCADlib/utils/core/rounded_rectangle.scad \

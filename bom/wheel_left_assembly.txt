@@ -1,4 +1,4 @@
 wheel_left_assemblies:
 Printed:
+  2 Wheel.stl
   2 tire_v3.stl
-  2 wheel_26_5mm.stl

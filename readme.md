@@ -10,7 +10,7 @@ General instruction:
 1. Make sure the printer is well calibrated. Specifically the extruder. The extrusion factor, also know as the extrusion multiplier, will have a big impact on the way the pieces fits together. I personnaly use that guide before using a new filament: [Extrusion Multiplier](https://ellis3dp.com/Print-Tuning-Guide/articles/extrusion_multiplier.html)
 2. Print every pieces in PLA.
 3. Print the shock in PETG to get more flexibility.
-4. If you decide to print the tires print them in TPU, the softest one you can find. The grip is not very good with printed tires. For better grip you can buy the tires. In that case print the wheel part Wheel.STL.
+4. If you decide to print the tires print them in TPU, the softest one you can find. The grip is not very good with printed tires. For better grip you can buy the tires. In that case print the wheel part wheel_26_5mm.stl.
 4. If the screws tend to break the plastic part you can enlarge the hole with a drill bit.
 4. Use plenty of light grease in the gear box
 5. Use a bit of light grease in the wheel hub.
@@ -115,7 +115,7 @@ License: [Creative Commons - Attribution - Share Alike](https://creativecommons.
 | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;P14_G34.stl |
 | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;Servo_Holder.stl |
 | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;Servo_Horn.stl |
-| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;Wheel.stl |
+| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;Wheel.stl |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;body_v3.stl |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;firstStageGear.stl |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;frameBack_v2_1.stl |
@@ -128,7 +128,7 @@ License: [Creative Commons - Attribution - Share Alike](https://creativecommons.
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;shock_43mm.stl |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;shock_46mm.stl |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;tire_v3.stl |
-| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;wheel_26_5mm.stl |
+| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;wheel_26_5mm.stl |
 | &nbsp;&nbsp;66&nbsp; | &nbsp;&nbsp;23&nbsp; | &nbsp;&nbsp;30&nbsp; | &nbsp;&nbsp;119&nbsp; | &nbsp;&nbsp;Total 3D printed parts count |
 
 <span></span>
@@ -139,9 +139,9 @@ License: [Creative Commons - Attribution - Share Alike](https://creativecommons.
 ## 2 x Wheel Left Assembly
 ### 3D Printed parts
 
-| 2 x tire_v3.stl | 2 x wheel_26_5mm.stl |
+| 2 x Wheel.stl | 2 x tire_v3.stl |
 |---|---|
-| ![tire_v3.stl](stls/tire_v3.png) | ![wheel_26_5mm.stl](stls/wheel_26_5mm.png) 
+| ![Wheel.stl](stls/Wheel.png) | ![tire_v3.stl](stls/tire_v3.png) 
 
 
 
@@ -160,9 +160,9 @@ License: [Creative Commons - Attribution - Share Alike](https://creativecommons.
 ## 2 x Wheel Right Assembly
 ### 3D Printed parts
 
-| 2 x tire_v3.stl | 2 x wheel_26_5mm.stl |
+| 2 x Wheel.stl | 2 x tire_v3.stl |
 |---|---|
-| ![tire_v3.stl](stls/tire_v3.png) | ![wheel_26_5mm.stl](stls/wheel_26_5mm.png) 
+| ![Wheel.stl](stls/Wheel.png) | ![tire_v3.stl](stls/tire_v3.png) 
 
 
 
@@ -997,14 +997,14 @@ License: [Creative Commons - Attribution - Share Alike](https://creativecommons.
 
 ### 3D Printed parts
 
-| 1 x Center_Drive_Shaft_P2_15_5mm.stl | 1 x Wheel.stl | 1 x body_v3.stl |
+| 1 x Center_Drive_Shaft_P2_15_5mm.stl | 1 x body_v3.stl | 1 x shock_46mm.stl |
 |---|---|---|
-| ![Center_Drive_Shaft_P2_15_5mm.stl](stls/Center_Drive_Shaft_P2_15_5mm.png) | ![Wheel.stl](stls/Wheel.png) | ![body_v3.stl](stls/body_v3.png) 
+| ![Center_Drive_Shaft_P2_15_5mm.stl](stls/Center_Drive_Shaft_P2_15_5mm.png) | ![body_v3.stl](stls/body_v3.png) | ![shock_46mm.stl](stls/shock_46mm.png) 
 
 
-| 1 x shock_46mm.stl |
+| 1 x wheel_26_5mm.stl |
 |---|
-| ![shock_46mm.stl](stls/shock_46mm.png) 
+| ![wheel_26_5mm.stl](stls/wheel_26_5mm.png) 
 
 
 
