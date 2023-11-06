@@ -15,7 +15,7 @@
 //! 1. Make sure the printer is well calibrated. Specifically the extruder. The extrusion factor, also know as the extrusion multiplier, will have a big impact on the way the pieces fits together. I personnaly use that guide before using a new filament: [Extrusion Multiplier](https://ellis3dp.com/Print-Tuning-Guide/articles/extrusion_multiplier.html)
 //! 2. Print every pieces in PLA.
 //! 3. Print the shock in PETG to get more flexibility.
-//! 4. If you decide to print the tires print them in TPU, the softest one you can find. The grip is not very good with printed tires. For better grip you can buy the tires. In that case print the wheel part Wheel.STL.
+//! 4. If you decide to print the tires print them in TPU, the softest one you can find. The grip is not very good with printed tires. For better grip you can buy the tires. In that case print the wheel part wheel_26_5mm.stl.
 //! 4. If the screws tend to break the plastic part you can enlarge the hole with a drill bit.
 //! 4. Use plenty of light grease in the gear box
 //! 5. Use a bit of light grease in the wheel hub.
@@ -311,7 +311,7 @@ module Wheel_stl()
 {
     stl("Wheel");
     stl_colour(pp2_colour)
-    translate([0,0,0]) rotate([-90,0,0]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Wheel.STL");
+    translate([12,0,-12]) rotate([0,0,90]) import ("/home/rejeantremblay/Documents/openscad/RockCrawlerNewGearBox/Wheel.STL");
 }
 module tire_v3_stl()
 {
@@ -1092,7 +1092,7 @@ assembly("wheel_left", big=false, ngb=true) {
 
     translate([0,0.1,0]) tire_v3_stl();
     explode([0,+25,0]) {
-        wheel_26_5mm_stl();
+        Wheel_stl();
     }
 }
 
@@ -1104,7 +1104,7 @@ assembly("wheel_right", big=false, ngb=true) {
 
     translate([0,13.8,0]) rotate([0,0,180]) tire_v3_stl();
     explode([0,+25,0]) {
-        wheel_26_5mm_stl();
+        Wheel_stl();
     }
 }
 
@@ -1118,7 +1118,7 @@ assembly("main", big=true) {
 
     hidden()
     {
-        Wheel_stl();
+        wheel_26_5mm_stl();
         Center_Drive_Shaft_P2_15_5mm_stl();
         shock_46mm_stl();
     }
